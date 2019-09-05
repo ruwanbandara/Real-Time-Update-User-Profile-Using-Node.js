@@ -1,3 +1,6 @@
+<br>
+<br>
+<br>
 <div class="container">
     <div class="row">
         <h2>Add User</h2>
@@ -71,8 +74,10 @@
                         <td>{{this.laname}}</td>
                         <td>{{this.email}}</td>
                         <td>{{this.prof}}</td>
-                        <td> <button class="btn btn-primary">Edit </button>
-                        <a href="/deteleUser/{{this.id}}"><button class="btn btn-primary">Delete</button></a> </td>
+                        <td>
+                            <a href="/edit/{{this.id}}"><button class="btn btn-info">Edit </button> </a> 
+
+                             <a href="/deteleUser/{{this.id}}"><button class="btn btn-warning">Delete</button></a> </td>
 
                     </tr>
                     {{/each}}

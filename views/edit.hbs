@@ -1,0 +1,62 @@
+
+<div class="container">
+
+    <div class="row">
+
+        <h2>Update Record</h2>
+        <br>
+        <br>
+        <br>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            {{#each userdata}}  
+
+            <form class="form-horizontal" method="post" action="/updateUser/{{this.id}}">
+
+            <div class="form-group">
+                <label class="control-label-sm-2" for="name"> First Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="First Name" name="fname" value="{{this.fname}}">
+                </div>
+            </div>
+
+             <div class="form-group">
+                <label class="control-label-sm-2" for="name" > Last Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="Last Name" name="laname" value="{{this.laname}}">
+                </div>
+            </div>
+
+             <div class="form-group">
+                <label class="control-label-sm-2" for="Emai" > Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email" value="{{this.email}}">
+                </div>
+            </div>
+
+             <div class="form-group">
+                <label class="control-label-sm-2" for="name" > Profession</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="Profession" name="prof" value="{{this.prof}}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-success" id="adduser"> Update </button>
+                </div>
+            </div>
+            
+            </form>
+            {{/each}}
+
+
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    
+</div>>
+
+   
