@@ -41,6 +41,10 @@ router.post('/addUser',function(req,res){
 router.get('/deteleUser/:id',function(req,res){
 
   var userid = req.params.id;
+  connection.query("DELETE FROM users WHERE id = ?",[userid],function (err,rows){
+    if(err) throw err;
+    res.redirect('/')
+  });
 
   
 });
