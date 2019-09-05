@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
     if(err) throw err;
 
-    console.log(rows)
+    
 
     res.render('index', {users:rows });
 
@@ -36,6 +36,13 @@ router.post('/addUser',function(req,res){
   });
 
  
+});
+
+router.get('/deteleUser/:id',function(req,res){
+
+  var userid = req.params.id;
+
+  
 });
 
 module.exports = router;
