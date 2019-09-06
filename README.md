@@ -557,6 +557,7 @@ This example shows the most basic way to use this view engine.
 This example is more comprehensive and shows how to use many of the features of this view engine, including helpers, partials, multiple layouts, etc.
 
 As noted in the **Package Design** section, this view engine's implementation is instance-based, and more advanced usages can take advantage of this. The Advanced Usage example demonstrates how to use an `ExpressHandlebars` instance to share templates with the client, among other features.
+express handelbas template engine
 
 
 [Basic Usage]: https://github.com/ericf/express-handlebars/tree/master/examples/basic
